@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>888 Gacor</h1>
+        <div class="game-info">
+            <p>Uang Pemain: $<span id="player-money">5000</span></p>
+            <p>Taruhan: $<input type="number" id="bet-amount" value="100" min="100" max="5000"></p>
+        </div>
+        <div class="game-board">
+            <div class="player-area">
+                <h2>Player's Cards</h2>
+                <div id="player-cards" class="cards"></div>
+                <p>Total: <span id="player-total">0</span></p>
+            </div>
+            <div class="dealer-area">
+                <h2>Dealer's Cards</h2>
+                <div id="dealer-cards" class="cards"></div>
+                <p>Total: <span id="dealer-total">0</span></p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="hit-button">Hit</button>
+            <button id="stay-button">Stay</button>
+            <button id="start-game-button">Start Game</button>
+        </div>
+        <div id="message"></div>
+        <div id="game-over" class="hidden">
+            <h2>Bangkrut</h2>
+            <p>Yahahaha siapa suruh judi</p>
+            <button id="restart-game-button">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

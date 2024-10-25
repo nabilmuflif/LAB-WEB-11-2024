@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;  /* Memastikan body dan html mengambil 100% tinggi halaman */
+  background-color: #2c2c2c; /* Abu-abu gelap */
+}
+
+#content {
+  min-height: calc(100vh - 150px);  /* Mengatur konten agar minimal menyesuaikan tinggi viewport */
+}
+
+.bg-image {
+  background-image: url(assest/img.jpg);
+  background-size: cover;
+  background-position: center; 
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+@media (min-width: 1025px) {
+  .h-custom-2 {
+      height: 100%;
+  }
+}
+
+.h-custom-2 {
+  height: calc(100% - 50px);
+}
+
+.form-control {
+  background-color: #333;
+  color: #fff;
+}
+
+.form-control:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+.form-label {
+  color: #fff;
+}
+
+.btn-info {
+  background-color: #017bff;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #0156b3;
+}
+
+.text-muted {
+  color: #d1d1d1 !important;
+}
+
+.link-info {
+  color: #017bff;
+}
+
+.link-info:hover {
+  color: #0156b3;
+}

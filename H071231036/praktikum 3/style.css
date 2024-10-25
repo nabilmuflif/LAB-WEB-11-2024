@@ -8,3 +8,30 @@
     justify-content: center;
   }
 
+  html, body {
+    height: 100%;  /* Memastikan body dan html mengambil 100% tinggi halaman */
+}
+
+#content {
+    min-height: calc(100vh - 150px);  /* Mengatur konten agar minimal menyesuaikan tinggi viewport */
+}
+
+.bg-image {
+  background-image: url(assest/img2.jpg);
+  background-size: cover;
+  background-position: center; 
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
